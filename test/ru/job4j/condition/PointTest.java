@@ -9,7 +9,7 @@ public class PointTest {
 
     @Test
     public void distance() {
-        double expected = 2.23606797749979;
+        double expected = 2.0;
         double rsl = Point.distance(0,0,2,0);
         assertThat(rsl, is(expected));
 
