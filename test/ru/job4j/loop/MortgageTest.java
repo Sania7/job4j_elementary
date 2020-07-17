@@ -1,9 +1,9 @@
 package ru.job4j.loop;
 
 import org.junit.Test;
+
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class MortgageTest {
 
@@ -12,8 +12,9 @@ public class MortgageTest {
         int year = Mortgage.year(1000, 1200, 1);
         assertThat(year, is(1));
     }
+
     @Test
-    public void when2Year(){
+    public void when2Year() {
         int year = Mortgage.year(100,120,50);
         assertThat(year, is(2));
     }
