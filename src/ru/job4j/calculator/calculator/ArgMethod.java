@@ -1,4 +1,4 @@
-package ru.job4j.calculator.calculanor;
+package ru.job4j.calculator.calculator;
 
 public class ArgMethod {
     
