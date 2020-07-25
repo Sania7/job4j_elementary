@@ -24,6 +24,7 @@ public class MatrixCheck {
         }
         return result;
     }
+
     @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
@@ -31,5 +32,17 @@ public class MatrixCheck {
             rsl[i] = board[i][i];
         }
         return rsl;
+    }
+
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int index = 0; index < board.length; index++) {
+            if (monoHorizontal(board, index) || monoVertical(board, index)) {
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 }
