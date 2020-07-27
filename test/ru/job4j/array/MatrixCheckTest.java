@@ -5,7 +5,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MatrixCheckTest {
-
     @Test
     public void whenHasMonoHorizontal() {
         char[][] input = {
@@ -26,9 +25,6 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, 2);
         assertThat(result, is(true));
     }
-
-
-
     @SuppressWarnings("checkstyle:EmptyLineSeparator")
     @Test
     public void whenDiagonal() {

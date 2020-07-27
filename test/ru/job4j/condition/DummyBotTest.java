@@ -7,12 +7,10 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.*;
 
 public class DummyBotTest {
-
     @Test
     public void whenGreetBot() {
         assertThat(DummyBot.answer("Привет, Бот."), is("Привет, умник."));
     }
-
     @Test
     public void whenByeBot() {
         assertThat(DummyBot.answer("Пока!"), is("До скорой встречи!"));

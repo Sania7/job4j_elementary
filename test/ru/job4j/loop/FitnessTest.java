@@ -7,7 +7,6 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.*;
 
 public class FitnessTest {
-
     @Test
     public void whenIvanGreatNik() {
         int month = Fitness.calc(50,90);

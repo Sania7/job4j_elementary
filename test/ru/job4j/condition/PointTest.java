@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class PointTest {
-
     @Test
     public void distance() {
         double expected = 2.0;

@@ -6,8 +6,7 @@ public class TrgArea {
         double rsl = Math.sqrt(p1 * (p1 - a) * (p1 - b) * (p1 - c));
         return rsl;
     }
-
-
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static void main(String[] args) {
         double rsl = TrgArea.area(2,2,2);
         System.out.println("area (2, 2, 2) = " + rsl);

@@ -5,7 +5,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class SquareTest {
-
     @Test
     public void whenBound5() {
         int bound = 5;

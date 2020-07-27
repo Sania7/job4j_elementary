@@ -5,7 +5,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class MinTest {
-
     @Test
     public void whenFirstMin() {
         assertThat(Min.findMin(new int[] {0, 5, 10}), is(0));

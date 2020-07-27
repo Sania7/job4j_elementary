@@ -5,7 +5,6 @@ public class MultiMax {
         int result = first > second ? first : second;
         return result > third ? result : third;
     }
-
     public static void main(String[] args) {
         int result = MultiMax.max(1, 4, 2);
         System.out.println(result);

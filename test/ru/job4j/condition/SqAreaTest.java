@@ -6,7 +6,6 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 
 public class SqAreaTest {
-
     @Test
     public void square() {
         double expected = 1;
@@ -14,7 +13,7 @@ public class SqAreaTest {
         assertThat(result, is(expected));
     }
     @Test
-    public void whenp6k2s2(){
+    public void whenp6k2s2() {
         int k = 2;
         int p = 6;
         double expected = 2.0;

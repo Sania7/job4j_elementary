@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 public class CheckPrimeNumberTest {
-
     @Test
     public void when5() {
         boolean rsl = CheckPrimeNumber.check(5);

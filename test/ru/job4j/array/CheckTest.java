@@ -5,7 +5,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class CheckTest {
-
     @Test
     public void whenDataMonoByTrueThenTrue() {
         boolean[] input = new boolean[] {true, true, true};

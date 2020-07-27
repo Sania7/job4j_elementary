@@ -8,11 +8,9 @@ public class SortSelected {
                 int temp = data[i];
                 data[i] = data[index];
                 data[index] = temp;
-
         }
         return data;
     }
-
     public static void main(String[] args) {
         int[] n = {5, 45, 34, 234, 64, 2, -2};
         int[] rsl = SortSelected.sort(n);
