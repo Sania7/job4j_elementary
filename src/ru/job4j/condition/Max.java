@@ -5,6 +5,7 @@ public class Max {
         int max = left > right ? left : right;
         return max;
     }
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static void main(String[] args) {
         int number = Max.max(1, 2);
         System.out.println(number);
