@@ -1,10 +1,14 @@
 package ru.job4j.max;
-
+/**
+ * 5.1. Зона видимости переменных [#320247]
+ * Исправить ошибку, объяснить почему возникла эта ситуация.
+ *
+ */
 public class Reduce {
-    public int[] array;
+    private int[] array;
 
     public void to(int[] array) {
-        return;
+        array = array;
     }
     public void print() {
         for (int index = 0; index < array.length; index++) {
