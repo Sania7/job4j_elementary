@@ -15,13 +15,14 @@ public class Shop {
         }
     }
 
-    public static int indexOfNull(Product[]products) {
-        for (int i = 0; i < products.length; i++) {
-            Product product = products[i];
-            if (product == null) {
-                System.out.println(product);
+        public static int indexOfNull(Product[]products) {
+            for (int i = 0; i < products.length; i++) {
+                Product product1 = products[i];
+                if (product1 == null) {
+                    System.out.println(product1);
+                    break;
+                }
             }
+            return -1;
         }
-        return -1;
-    }
 }
