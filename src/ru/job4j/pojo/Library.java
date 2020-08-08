@@ -25,5 +25,16 @@ public class Library {
             Book bk = books[i];
             System.out.println(bk.getName() + " - " + bk.getNumberOfPages() + " страниц.");
         }
+        System.out.println();
+        System.out.println("Проверка наличия книги.");
+        System.out.println();
+
+
+        for (int i = 0; i < books.length; i++) {
+            Book bok = books[i];
+            if (bok.getName().equals("Clean code")) {
+                System.out.println(bok.getName() + " - " + bok.getNumberOfPages() + " страниц.");
+            }
+        }
     }
 }
