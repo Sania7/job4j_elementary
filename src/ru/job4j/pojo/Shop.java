@@ -20,7 +20,7 @@ public class Shop {
                 Product product1 = products[i];
                 if (product1 == null) {
                     System.out.println(product1);
-                    break;
+                    return i;
                 }
             }
             return -1;
