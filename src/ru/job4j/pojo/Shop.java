@@ -22,6 +22,6 @@ public class Shop {
                 System.out.println(product);
             }
         }
-        return 0;
+        return -1;
     }
 }
