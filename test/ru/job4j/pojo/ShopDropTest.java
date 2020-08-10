@@ -16,7 +16,6 @@ public class ShopDropTest {
         assertThat(rsl[0].getName(), is("Bread"));
         assertThat(rsl[1], is(nullValue()));
     }
-
     @Test
     public void whenDropLast() {
         Product[] products = new Product[2];
