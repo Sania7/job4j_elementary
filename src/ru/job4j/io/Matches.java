@@ -11,11 +11,12 @@ public class Matches {
             name = player ? "Player 1" : "Player 2";
             System.out.println(name + " , take one to three matches!");
             Scanner sc = new Scanner(System.in);
-            int number1 = sc.nextInt();
-            if (number1 >= 4 || number1 <= 0) {
+            int number = sc.nextInt();
+            if (number >= 4 || number <= 0 || amount - number < 0) {
                 System.out.println("You took the wrong amount!");
+                System.out.println("You can take " + amount  + " matches");
             } else {
-                amount = amount - number1;
+                amount = amount - number;
                 if (amount == 0) {
                     break;
                 }
@@ -23,7 +24,6 @@ public class Matches {
                 player = !player;
             }
         }
-        System.out.println("Congratulations," + player + " won!");
+            System.out.println("Congratulations, " + name + " won!");
     }
 }
-
