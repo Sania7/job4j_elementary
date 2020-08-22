@@ -5,7 +5,7 @@ public class DbStore implements Store {
     }
 
     public String[] load() { // создаем метод массив строковый загрузка
-        return new String[] {  // возвращает новую строку
+        return new String[] { // возвращает новую строку
         };
     }
 }
