@@ -9,7 +9,7 @@ public class Factorial {
         return result;
     }
     public static void main(String[] args) {
-        int n = 5;
+        int n = 4;
         System.out.println(Factorial.calc(n));
         n = 0;
         System.out.println(Factorial.calc(n));

@@ -2,8 +2,8 @@ package ru.job4j.loop;
 
 public class Board {
     public static void paint(int width, int height) {
-        for (int row = 0; row < height; row++) {
-            for (int cell = 0; cell < width; cell++) {
+        for (int row = 1; row < height; row++) {
+            for (int cell = 1; cell < width; cell++) {
                 if ((row + cell) % 2 == 0) {
                     System.out.print(" X ");
                 } else {
@@ -13,9 +13,10 @@ public class Board {
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
-        paint(3, 3);
+        paint(4, 4);
         System.out.println();
-        paint(8,8);
+        paint(8, 8);
     }
 }
