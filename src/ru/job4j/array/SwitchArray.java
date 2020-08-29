@@ -7,17 +7,19 @@ public class SwitchArray {
         array[dest] = tmp;
         return array;
     }
+
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
-        array[0] = array[array.length - 1];
-        array[array.length - 1] = temp;
+        array[0] = array[array.length];
+        array[array.length] = temp;
         return array;
     }
+
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 4, 5, 6};
-        int[] rsl = swap(nums,0,4);
-        for (int index = 0; index < rsl.length; index++) {
-            System.out.print(rsl[index] + " ");
+        int[] rsl = swap(nums, 0, 4);
+        for (int index = 0; index < nums.length; index++) {
+            System.out.print(nums[index] + " ");
         }
     }
 }
