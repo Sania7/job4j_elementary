@@ -15,14 +15,13 @@ public class UserStore {
         return rsl;
     }
 
+
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static boolean validate(User user) throws UserInvalidException {
-        boolean result = false;
-        if ((user.getUsername().length() >= 3) && (user.isValid())) {
-            result = true;
-        } else {
+        if ((user.getUsername().length() >= 3) || !(user.isValid())) {
             throw new UserInvalidException("User isn`t valid");
         }
-        return result;
+        return true;
     }
 
     public static void main(String[] args) throws UserNotFoundException {
