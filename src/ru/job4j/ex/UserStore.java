@@ -18,24 +18,26 @@ public class UserStore {
 
     @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static boolean validate(User user) throws UserInvalidException {
-        if ((user.getUsername().length() >= 3) || !(user.isValid())) {
+        if ((user.getUsername().length() < 3) || !(user.isValid())) {
             throw new UserInvalidException("User isn`t valid");
         }
         return true;
     }
 
-    public static void main(String[] args) throws UserNotFoundException {
+    public static void main(String[] args) {
         User[] users = {
-                new User("Petr Arsentev", true),
-                new User("q", true)
+                new User("Alexandr Bannikov", true)
         };
         try {
-            User user = findUser(users, "q");
+            User user = findUser(users, "Alexandr Bannikov");
             if (validate(user)) {
                 System.out.println("This user has an access");
             }
-        } catch (UserNotFoundException ex) {
-            ex.printStackTrace();
+        }   catch (UserInvalidException uie) {
+            uie.printStackTrace();
+        }
+        catch (UserNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
