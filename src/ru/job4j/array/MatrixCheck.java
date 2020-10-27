@@ -11,7 +11,7 @@ public class MatrixCheck {
         }
         return result;
     }
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
+
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int i = 0; i < board.length; i++) {
@@ -22,7 +22,7 @@ public class MatrixCheck {
         }
         return result;
     }
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
+
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
         for (int i = 0; i < board.length; i++) {
@@ -30,7 +30,7 @@ public class MatrixCheck {
         }
         return rsl;
     }
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
+
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int index = 0; index < board.length; index++) {
